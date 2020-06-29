@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22916952F027DD2C832C6015 /* Pods_AdBoards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB86A65405041A197F1FCE0 /* Pods_AdBoards.framework */; };
+		3D3048B4249A56C500FF35A6 /* DetailTamplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3048B3249A56C500FF35A6 /* DetailTamplateVC.swift */; };
 		3D8DE5362498B454000800C6 /* ChoiceTampleCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8DE5352498B454000800C6 /* ChoiceTampleCardCell.swift */; };
 		3D8DE5522498C361000800C6 /* CampaignCateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8DE54C2498C361000800C6 /* CampaignCateVC.swift */; };
 		3D8DE5532498C361000800C6 /* CampaignsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8DE54D2498C361000800C6 /* CampaignsVC.swift */; };
@@ -20,7 +22,7 @@
 		3DAD7A972490EC6D0071CB5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD7A952490EC6D0071CB5A /* Main.storyboard */; };
 		3DAD7A992490EC6F0071CB5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD7A982490EC6F0071CB5A /* Assets.xcassets */; };
 		3DAD7A9C2490EC6F0071CB5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAD7A9A2490EC6F0071CB5A /* LaunchScreen.storyboard */; };
-		3DAD7AA824912F030071CB5A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD7AA724912F030071CB5A /* GradientView.swift */; };
+		3DAD7AA824912F030071CB5A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD7AA724912F030071CB5A /* UIView+Extensions.swift */; };
 		3DAD7AAC249133F90071CB5A /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD7AAB249133F90071CB5A /* UIButton+Extensions.swift */; };
 		3DAD7AB12491403B0071CB5A /* Navigation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD7AB02491403B0071CB5A /* Navigation+Extensions.swift */; };
 		3DAD7AB52491450A0071CB5A /* UILabel+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD7AB42491450A0071CB5A /* UILabel+Extensions.swift */; };
@@ -28,10 +30,16 @@
 		3DAD7ABF249320940071CB5A /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD7ABE249320940071CB5A /* Card.swift */; };
 		3DAD7AC52493F8C20071CB5A /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD7AC42493F8C20071CB5A /* UITextField+Extensions.swift */; };
 		3DAD7AC7249401460071CB5A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAD7AC6249401460071CB5A /* CategoryCell.swift */; };
+		3DCFACEF249A709F00832604 /* EditorTamplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFACEE249A709F00832604 /* EditorTamplateVC.swift */; };
+		3DCFACF1249A70BA00832604 /* SelectTamplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFACF0249A70BA00832604 /* SelectTamplateVC.swift */; };
+		3DCFACF3249A70D200832604 /* DoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFACF2249A70D200832604 /* DoneVC.swift */; };
+		3DCFACF5249A70EB00832604 /* NormalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFACF4249A70EB00832604 /* NormalVC.swift */; };
+		3DD152B1249E3DA800A4B08F /* CardCampaignsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD152B0249E3DA800A4B08F /* CardCampaignsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		215841EFA712F792BD161A5F /* Pods-AdBoards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdBoards.release.xcconfig"; path = "Target Support Files/Pods-AdBoards/Pods-AdBoards.release.xcconfig"; sourceTree = "<group>"; };
+		3D3048B3249A56C500FF35A6 /* DetailTamplateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTamplateVC.swift; sourceTree = "<group>"; };
 		3D8DE5352498B454000800C6 /* ChoiceTampleCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTampleCardCell.swift; sourceTree = "<group>"; };
 		3D8DE54C2498C361000800C6 /* CampaignCateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignCateVC.swift; sourceTree = "<group>"; };
 		3D8DE54D2498C361000800C6 /* CampaignsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignsVC.swift; sourceTree = "<group>"; };
@@ -47,7 +55,7 @@
 		3DAD7A982490EC6F0071CB5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DAD7A9B2490EC6F0071CB5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DAD7A9D2490EC6F0071CB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3DAD7AA724912F030071CB5A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		3DAD7AA724912F030071CB5A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		3DAD7AAB249133F90071CB5A /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		3DAD7AB02491403B0071CB5A /* Navigation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigation+Extensions.swift"; sourceTree = "<group>"; };
 		3DAD7AB42491450A0071CB5A /* UILabel+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extensions.swift"; sourceTree = "<group>"; };
@@ -55,7 +63,13 @@
 		3DAD7ABE249320940071CB5A /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		3DAD7AC42493F8C20071CB5A /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
 		3DAD7AC6249401460071CB5A /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		3DCFACEE249A709F00832604 /* EditorTamplateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorTamplateVC.swift; sourceTree = "<group>"; };
+		3DCFACF0249A70BA00832604 /* SelectTamplateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTamplateVC.swift; sourceTree = "<group>"; };
+		3DCFACF2249A70D200832604 /* DoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneVC.swift; sourceTree = "<group>"; };
+		3DCFACF4249A70EB00832604 /* NormalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalVC.swift; sourceTree = "<group>"; };
+		3DD152B0249E3DA800A4B08F /* CardCampaignsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCampaignsCell.swift; sourceTree = "<group>"; };
 		93826536AE4053D8673309B2 /* Pods-AdBoards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdBoards.debug.xcconfig"; path = "Target Support Files/Pods-AdBoards/Pods-AdBoards.debug.xcconfig"; sourceTree = "<group>"; };
+		EAB86A65405041A197F1FCE0 /* Pods_AdBoards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdBoards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +77,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22916952F027DD2C832C6015 /* Pods_AdBoards.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D0A2153F5BC0633850E2E66 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAB86A65405041A197F1FCE0 /* Pods_AdBoards.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3D8DE54B2498C361000800C6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +101,11 @@
 				3D8DE54F2498C361000800C6 /* CampaignFormVC.swift */,
 				3D8DE5502498C361000800C6 /* ExpertiseVC.swift */,
 				3D8DE5512498C361000800C6 /* LoginViewController.swift */,
+				3D3048B3249A56C500FF35A6 /* DetailTamplateVC.swift */,
+				3DCFACEE249A709F00832604 /* EditorTamplateVC.swift */,
+				3DCFACF0249A70BA00832604 /* SelectTamplateVC.swift */,
+				3DCFACF2249A70D200832604 /* DoneVC.swift */,
+				3DCFACF4249A70EB00832604 /* NormalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -88,6 +116,7 @@
 				3DAD7A8E2490EC6D0071CB5A /* AdBoards */,
 				3DAD7A8D2490EC6D0071CB5A /* Products */,
 				E61FBEBCE111BD69D4060646 /* Pods */,
+				3D0A2153F5BC0633850E2E66 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,9 +131,9 @@
 		3DAD7A8E2490EC6D0071CB5A /* AdBoards */ = {
 			isa = PBXGroup;
 			children = (
-				3D8DE54B2498C361000800C6 /* Controller */,
 				3DAD7ABD249320780071CB5A /* Modal */,
 				3DAD7AB624921E8C0071CB5A /* Customer */,
+				3D8DE54B2498C361000800C6 /* Controller */,
 				3DAD7AA624912E810071CB5A /* Extensions */,
 				3DAD7A8F2490EC6D0071CB5A /* AppDelegate.swift */,
 				3DAD7A912490EC6D0071CB5A /* SceneDelegate.swift */,
@@ -120,7 +149,7 @@
 		3DAD7AA624912E810071CB5A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3DAD7AA724912F030071CB5A /* GradientView.swift */,
+				3DAD7AA724912F030071CB5A /* UIView+Extensions.swift */,
 				3DAD7AAB249133F90071CB5A /* UIButton+Extensions.swift */,
 				3DAD7AB02491403B0071CB5A /* Navigation+Extensions.swift */,
 				3DAD7AB42491450A0071CB5A /* UILabel+Extensions.swift */,
@@ -135,6 +164,7 @@
 				3DAD7ABB24931D0C0071CB5A /* CardViewCell.swift */,
 				3DAD7AC6249401460071CB5A /* CategoryCell.swift */,
 				3D8DE5352498B454000800C6 /* ChoiceTampleCardCell.swift */,
+				3DD152B0249E3DA800A4B08F /* CardCampaignsCell.swift */,
 			);
 			path = Customer;
 			sourceTree = "<group>";
@@ -271,24 +301,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DCFACF5249A70EB00832604 /* NormalVC.swift in Sources */,
 				3D8DE5572498C361000800C6 /* LoginViewController.swift in Sources */,
 				3DAD7AB12491403B0071CB5A /* Navigation+Extensions.swift in Sources */,
 				3DAD7AAC249133F90071CB5A /* UIButton+Extensions.swift in Sources */,
 				3D8DE5532498C361000800C6 /* CampaignsVC.swift in Sources */,
+				3DCFACF3249A70D200832604 /* DoneVC.swift in Sources */,
 				3D8DE5522498C361000800C6 /* CampaignCateVC.swift in Sources */,
+				3DCFACF1249A70BA00832604 /* SelectTamplateVC.swift in Sources */,
+				3D3048B4249A56C500FF35A6 /* DetailTamplateVC.swift in Sources */,
 				3DAD7AB52491450A0071CB5A /* UILabel+Extensions.swift in Sources */,
 				3DAD7ABC24931D0C0071CB5A /* CardViewCell.swift in Sources */,
 				3DAD7AC52493F8C20071CB5A /* UITextField+Extensions.swift in Sources */,
 				3DAD7A942490EC6D0071CB5A /* ViewController.swift in Sources */,
-				3DAD7AA824912F030071CB5A /* GradientView.swift in Sources */,
+				3DAD7AA824912F030071CB5A /* UIView+Extensions.swift in Sources */,
 				3DAD7A902490EC6D0071CB5A /* AppDelegate.swift in Sources */,
 				3DAD7A922490EC6D0071CB5A /* SceneDelegate.swift in Sources */,
+				3DCFACEF249A709F00832604 /* EditorTamplateVC.swift in Sources */,
 				3D8DE5562498C361000800C6 /* ExpertiseVC.swift in Sources */,
 				3D8DE5362498B454000800C6 /* ChoiceTampleCardCell.swift in Sources */,
 				3D8DE5552498C361000800C6 /* CampaignFormVC.swift in Sources */,
 				3D8DE5542498C361000800C6 /* ChoiceTamplateVC.swift in Sources */,
 				3DAD7ABF249320940071CB5A /* Card.swift in Sources */,
 				3DAD7AC7249401460071CB5A /* CategoryCell.swift in Sources */,
+				3DD152B1249E3DA800A4B08F /* CardCampaignsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

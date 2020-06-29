@@ -41,7 +41,7 @@ class CampaignCateVC: UIViewController {
     let nextButton: UIButton = {
         let button = UIButton()
         button.setTitle("Next", for: .normal)
-        button.gradientButton()
+        button.gradientButton("account")
         
         return button
     }()

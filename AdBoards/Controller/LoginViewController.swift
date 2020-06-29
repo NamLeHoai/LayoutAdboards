@@ -40,9 +40,12 @@ class LoginViewController: UIViewController {
         }()
         
         let loginButton: UIButton = {
-           let button = UIButton()
+            let button = UIButton(type: .custom)
             button.setTitle("Login", for: .normal)
-            button.gradientButton()
+            
+            button.gradientButton("account")
+            
+            
             return button
         }()
         
@@ -50,9 +53,8 @@ class LoginViewController: UIViewController {
             let button = UIButton()
             button.setTitle("Get Started", for: .normal)
             button.setTitleColor(.black, for: .normal)
-            let leftColor = UIColor(red: 0.10, green: 0.196, blue: 0.186, alpha: 1.0)
-            let rightColor = UIColor(red: 0.43, green: 0.218, blue: 0.142, alpha: 1.0)
-            button.gradientButton()
+            
+            button.gradientButton("account")
             return button
         }()
         
@@ -74,6 +76,7 @@ class LoginViewController: UIViewController {
     }
     
     func setupLayout() {
+        
         view.sv(logo, headerLabel, subHeaderLabel, videoImageView, loginButton, startedButton, footerLabel)
         
         view.layout(

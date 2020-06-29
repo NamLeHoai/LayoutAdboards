@@ -49,17 +49,21 @@ class CampaignsVC: UIViewController {
     
     let CreateButton: UIButton = {
         let button = UIButton()
-        button.gradientButton()
+        button.gradientButton("account")
         button.setTitle("Create a Campaign", for: .normal)
         return button
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.hideTransparentNavigationBar()
+//        self.navigationController?.hideTransparentNavigationBar()
         view.backgroundColor = .white
         setupLayout()
         config()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.hideTransparentNavigationBar()
     }
     
     func setupLayout() {
@@ -67,9 +71,9 @@ class CampaignsVC: UIViewController {
         
         view.layout(
             69,
-            |-16-campaignsLabel-avatar-16-|,
+            |-16-campaignsLabel-avatar-16-| ,
             97,
-            |-38-articleImage-38-| ~ 212,
+            |-38-articleImage-38-| ,
             95,
             |-30-articleHeader-43-|,
             12,
@@ -80,7 +84,7 @@ class CampaignsVC: UIViewController {
         
 //        avatar ~ (45)
 //        avatar.heightEqualsWidth()
-        avatar.height(45).width(45)
+//        avatar.height(45).width(45)
     }
     
     func config() {

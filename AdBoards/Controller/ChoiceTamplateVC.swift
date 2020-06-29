@@ -10,6 +10,8 @@ import UIKit
 import Stevia
 class ChoiceTamplateVC: UIViewController {
 
+    var cards = ["Single", "Single1", "Single"]
+    
     let heyLabel: UILabel = {
         let label = UILabel()
         label.headerLabel()
@@ -44,6 +46,8 @@ class ChoiceTamplateVC: UIViewController {
         view.backgroundColor = .white
         cardTableView.delegate = self
         cardTableView.dataSource = self
+        cardTableView.showsVerticalScrollIndicator = false
+        cardTableView.register(ChoiceTampleCardCell.self, forCellReuseIdentifier: "ChoiceTampleCardCell")
         setuptLayout()
     }
     
@@ -58,8 +62,8 @@ class ChoiceTamplateVC: UIViewController {
             16,
             |-searchTF-| ~ 36,
             20,
-            |-17-cardTableView-15-| ~ 200
-            
+            |-17-cardTableView-15-| ~ 200,
+            0
         )
     }
 
@@ -73,9 +77,17 @@ extension ChoiceTamplateVC: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "CellID")
-        cell.textLabel?.text = "cell \(indexPath.row)"
-        cell.detailTextLabel?.text = " detail for cell \(indexPath.row)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ChoiceTampleCardCell", for: indexPath) as! ChoiceTampleCardCell
+        cell.imageCard.image = UIImage(named: cards[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let DetailVC = DetailTamplateVC()
+        navigationController?.pushViewController(DetailVC, animated: true)
     }
 }

@@ -7,4 +7,5 @@ target 'AdBoards' do
 
   # Pods for AdBoards
   pod 'SteviaLayout'
+pod 'TTGTagCollectionView'
 end

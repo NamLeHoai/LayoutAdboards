@@ -3,90 +3,132 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00DBF136EF636F784E5698521DE0509D /* Stevia+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CA0B23DA59A01A3EF7311FCD1F6597 /* Stevia+Notifications.swift */; };
-		0D5B9A528AB015265E53A286E1570BBC /* Stevia+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E8FAA3D18308350970475FE2496D2 /* Stevia+Content.swift */; };
-		21642523F227E758D45A919886BD6B17 /* Stevia+Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101C8096CA578F85B2625C715D3822E4 /* Stevia+Fill.swift */; };
-		26A496006DEB84DC2DBD015BEFB7B2B4 /* Pods-AdBoards-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA972BE14DB4530BD0640492EC1BAF10 /* Pods-AdBoards-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BDF1A3259B361A2D96E3DE35B6F4355 /* SteviaLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4B3872E76BF2A3CAAEE933904695605 /* SteviaLayout-dummy.m */; };
-		2FF7766761D9D7AE4E9F9F6F184B5B0A /* Stevia+Baselines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3443446B1A65E77A1C4EC1D6C293B3D2 /* Stevia+Baselines.swift */; };
-		424D5F4CBCDFEB534AD5001E11B4D26D /* SteviaLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D498F080970CAFB7DE38EE18968C25 /* SteviaLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		43F160ADD121807198652278449BE055 /* Stevia+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB250C026B31286355CC85005730F617 /* Stevia+Operators.swift */; };
-		46EB11A75164D6B5C463B59F02385F50 /* Stevia+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAB28CB08BB07EB6B0113B59557E9B44 /* Stevia+Size.swift */; };
-		4BFD02D9C34FF758ADF0B3421E4D3A5B /* Stevia+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE06BC7C79004F68BC9D542AA9A033 /* Stevia+Alignment.swift */; };
-		4CCBAB72FBA0A2414C16C30EDEECE65C /* Stevia+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4FEE10B2682E104328BE1984C4EC891 /* Stevia+Position.swift */; };
-		79B3C29B885EB5228FCFA844A5DB59C0 /* Stevia+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5A6C28B3E5018B3CAB0EB5E2173834 /* Stevia+Style.swift */; };
-		81E33894E9D53B0C69BBCAD762D9E61E /* Stevia+Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4DB6F97E9C05E95771B63A9B9E594F /* Stevia+Stacks.swift */; };
-		863CEBD4A1262F19C4393F04A3102551 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		00DBF136EF636F784E5698521DE0509D /* Stevia+Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B6DEEED48F7E83D685CCC62A8212BE /* Stevia+Notifications.swift */; };
+		0D5B9A528AB015265E53A286E1570BBC /* Stevia+Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = F986704AC64015A9BD0514879593B9C6 /* Stevia+Content.swift */; };
+		10BB92451A9089BFF4393E8B6DB71890 /* TTGTagCollectionView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E42F8314FBF50B8389030E210BA0920 /* TTGTagCollectionView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21642523F227E758D45A919886BD6B17 /* Stevia+Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C494FDB309E08507DE2C395FF27650 /* Stevia+Fill.swift */; };
+		28CDE412D97E73BABA6E6B836628236C /* Pods-AdBoards-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA972BE14DB4530BD0640492EC1BAF10 /* Pods-AdBoards-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BDF1A3259B361A2D96E3DE35B6F4355 /* SteviaLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 711FD282930AA4387800092A1EC20082 /* SteviaLayout-dummy.m */; };
+		2EA9E24EBCF659F2F50D340003A7DABC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2FF7766761D9D7AE4E9F9F6F184B5B0A /* Stevia+Baselines.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55FDCD4EBC03CAF928945392C4A771C /* Stevia+Baselines.swift */; };
+		3AF3901D9E7FE751F16767EE5E3E4887 /* TTGTagCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 73C922B25DA40651451203B9E1348D53 /* TTGTagCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		424D5F4CBCDFEB534AD5001E11B4D26D /* SteviaLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C75103FC6C9FB50FA523D3A4CD638B /* SteviaLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43F160ADD121807198652278449BE055 /* Stevia+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBEB6FEF2491AF17D8F40779B027D2D8 /* Stevia+Operators.swift */; };
+		447DF1694134D4F71FF065854CBFAD24 /* TTGTextTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C456C0C958A9D30CD6033D8C47F7E89 /* TTGTextTagCollectionView.m */; };
+		46EB11A75164D6B5C463B59F02385F50 /* Stevia+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41203288ED4A72999A2759795EF37FF /* Stevia+Size.swift */; };
+		4BFD02D9C34FF758ADF0B3421E4D3A5B /* Stevia+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08331551EDFC40DE8A8EE6E8A9912CDA /* Stevia+Alignment.swift */; };
+		4CCBAB72FBA0A2414C16C30EDEECE65C /* Stevia+Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F824C51741B96400D074F9715E1F9BC /* Stevia+Position.swift */; };
+		717FD26A54BED7190BF8043A4F9EAB0C /* TTGTagCollectionView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EEA684C5A4523FC96E84C4ECCE254B /* TTGTagCollectionView-dummy.m */; };
+		79B3C29B885EB5228FCFA844A5DB59C0 /* Stevia+Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C09F7DBD34B4056184CB144011626B9 /* Stevia+Style.swift */; };
+		81E33894E9D53B0C69BBCAD762D9E61E /* Stevia+Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20603A2184A59F3E35C993CE342E763 /* Stevia+Stacks.swift */; };
+		8D25259489746F10C3E0A1C8679ABAD5 /* TTGTextTagCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = B63C86B1D3F20769AB8D914F3B0DED5E /* TTGTextTagCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EA1E26B890C3CB5F290B548D08C6626 /* TTGTagCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E2A1C8E453F3D533AB0249B5A7D9E22 /* TTGTagCollectionView.m */; };
 		8FBE7D9A8577488197B2279E7912C25A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		A0C0C44C5BB2F48A7B2A49E1FC660C35 /* Stevia+Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0826E2AD8843EFE07098B404C6D049C3 /* Stevia+Percentage.swift */; };
-		AADE42C4163F422BE086BADA328B98A2 /* Stevia+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B5211AB10648CDC22795B3BFC34715 /* Stevia+Hierarchy.swift */; };
-		AB5363879FF2C3B9D3772ED74C84F919 /* Stevia+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C96417097BECC34EDE2986D59CDF3A5 /* Stevia+Center.swift */; };
-		ABF4174C9628772D1310FCB07D92C240 /* Stevia+LayoutAnchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC66909DFFB83B976C58B27333914EC /* Stevia+LayoutAnchors.swift */; };
-		B48060604C385CFF12CF5752CF786FDB /* Stevia+Equation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B430CF109040505459A1387B0BA02B0 /* Stevia+Equation.swift */; };
-		D3E994C14BF413E9A773B0DCCB01AC93 /* Stevia+FlexibleMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC2BD24EFAE5B9E15B17B23144E02D3 /* Stevia+FlexibleMargin.swift */; };
-		D5F6DFA08825B41AA225491CDBD767B4 /* Stevia+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB5B466BE30B7DF45EBADDEFEAD77DD /* Stevia+Constraints.swift */; };
-		D63B37769F5A098672374AC8F90AC8EE /* Stevia+DoubleDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC177C45B4C09E89F78F733BB9D795D9 /* Stevia+DoubleDash.swift */; };
-		EF2ADCB1636861CB8650C9CFF8F992D1 /* Stevia+GetConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610F2E6140F8BD2C38C8E4BFDE7D1874 /* Stevia+GetConstraint.swift */; };
-		F1D986455E8F10CC3BD31EA7E39B73AD /* Pods-AdBoards-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F27B3E8FF589F7FF278D601579F7EF /* Pods-AdBoards-dummy.m */; };
+		A0C0C44C5BB2F48A7B2A49E1FC660C35 /* Stevia+Percentage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953506FCD4C77418B41C53E919EE4BEE /* Stevia+Percentage.swift */; };
+		AADE42C4163F422BE086BADA328B98A2 /* Stevia+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F29D89AD7F0FD43F39F5724642BC9B6 /* Stevia+Hierarchy.swift */; };
+		AB5363879FF2C3B9D3772ED74C84F919 /* Stevia+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEFD1144B43B210501B50521015FAE8 /* Stevia+Center.swift */; };
+		ABF4174C9628772D1310FCB07D92C240 /* Stevia+LayoutAnchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DF5B338F4487CC59AD9AF02570A017 /* Stevia+LayoutAnchors.swift */; };
+		B48060604C385CFF12CF5752CF786FDB /* Stevia+Equation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EED5D2B5E6D4F3045EF02CBE623CFE5 /* Stevia+Equation.swift */; };
+		BBE836B66E877B2C56813895625F8D48 /* Pods-AdBoards-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F27B3E8FF589F7FF278D601579F7EF /* Pods-AdBoards-dummy.m */; };
+		D3E994C14BF413E9A773B0DCCB01AC93 /* Stevia+FlexibleMargin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852356EFB52DA54CD85219992FA3ABA1 /* Stevia+FlexibleMargin.swift */; };
+		D5F6DFA08825B41AA225491CDBD767B4 /* Stevia+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F58EDEA565AAB94DDE3510D588D6F7 /* Stevia+Constraints.swift */; };
+		D63B37769F5A098672374AC8F90AC8EE /* Stevia+DoubleDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF362D969F0BC2C1B8A0076A8429C161 /* Stevia+DoubleDash.swift */; };
+		DC3545D515E783D88E770FE6AE59E2B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		EF2ADCB1636861CB8650C9CFF8F992D1 /* Stevia+GetConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B12C2C8C3F7BB0A2780B73158490680 /* Stevia+GetConstraint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		39FBA4DB87F0652AED30205171B46B64 /* PBXContainerItemProxy */ = {
+		6AA39AC8EAB295938344865E11FFE826 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = CF263AB023E40C4315ED4A97C6D7829F;
 			remoteInfo = SteviaLayout;
 		};
+		6AB13530FA5D69C2EBD1AC6D9F6ED862 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4949B35B65C78C4D7DCBEEA66EC61D4;
+			remoteInfo = TTGTagCollectionView;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0053D3BBD6DC6E71CE3590DEAB77049E /* Pods-AdBoards-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdBoards-acknowledgements.plist"; sourceTree = "<group>"; };
-		0826E2AD8843EFE07098B404C6D049C3 /* Stevia+Percentage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Percentage.swift"; path = "Source/Stevia+Percentage.swift"; sourceTree = "<group>"; };
-		0CB5B466BE30B7DF45EBADDEFEAD77DD /* Stevia+Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Constraints.swift"; path = "Source/Stevia+Constraints.swift"; sourceTree = "<group>"; };
-		101C8096CA578F85B2625C715D3822E4 /* Stevia+Fill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Fill.swift"; path = "Source/Stevia+Fill.swift"; sourceTree = "<group>"; };
+		01F58EDEA565AAB94DDE3510D588D6F7 /* Stevia+Constraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Constraints.swift"; path = "Source/Stevia+Constraints.swift"; sourceTree = "<group>"; };
+		08331551EDFC40DE8A8EE6E8A9912CDA /* Stevia+Alignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Alignment.swift"; path = "Source/Stevia+Alignment.swift"; sourceTree = "<group>"; };
+		0B4C964D5D808ACB8A27ACB1669CA64E /* SteviaLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SteviaLayout.release.xcconfig; sourceTree = "<group>"; };
+		0C456C0C958A9D30CD6033D8C47F7E89 /* TTGTextTagCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTGTextTagCollectionView.m; path = TTGTagCollectionView/Classes/TTGTextTagCollectionView.m; sourceTree = "<group>"; };
+		0F29D89AD7F0FD43F39F5724642BC9B6 /* Stevia+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Hierarchy.swift"; path = "Source/Stevia+Hierarchy.swift"; sourceTree = "<group>"; };
 		11D8037B9CE350AA69206CDA76201B8E /* Pods-AdBoards-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AdBoards-Info.plist"; sourceTree = "<group>"; };
-		1B430CF109040505459A1387B0BA02B0 /* Stevia+Equation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Equation.swift"; path = "Source/Stevia+Equation.swift"; sourceTree = "<group>"; };
-		1C96417097BECC34EDE2986D59CDF3A5 /* Stevia+Center.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Center.swift"; path = "Source/Stevia+Center.swift"; sourceTree = "<group>"; };
+		18C494FDB309E08507DE2C395FF27650 /* Stevia+Fill.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Fill.swift"; path = "Source/Stevia+Fill.swift"; sourceTree = "<group>"; };
+		18EEA684C5A4523FC96E84C4ECCE254B /* TTGTagCollectionView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TTGTagCollectionView-dummy.m"; sourceTree = "<group>"; };
+		1EED5D2B5E6D4F3045EF02CBE623CFE5 /* Stevia+Equation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Equation.swift"; path = "Source/Stevia+Equation.swift"; sourceTree = "<group>"; };
+		23DF5B338F4487CC59AD9AF02570A017 /* Stevia+LayoutAnchors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+LayoutAnchors.swift"; path = "Source/Stevia+LayoutAnchors.swift"; sourceTree = "<group>"; };
+		293ED4D60C5DF0556ABCF677EE5765AA /* SteviaLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SteviaLayout-prefix.pch"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3443446B1A65E77A1C4EC1D6C293B3D2 /* Stevia+Baselines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Baselines.swift"; path = "Source/Stevia+Baselines.swift"; sourceTree = "<group>"; };
-		3A5A6C28B3E5018B3CAB0EB5E2173834 /* Stevia+Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Style.swift"; path = "Source/Stevia+Style.swift"; sourceTree = "<group>"; };
-		42CA0B23DA59A01A3EF7311FCD1F6597 /* Stevia+Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Notifications.swift"; path = "Source/Stevia+Notifications.swift"; sourceTree = "<group>"; };
-		45ED155BC13BB2D7675DBD04AE6D9A1F /* SteviaLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SteviaLayout.debug.xcconfig; sourceTree = "<group>"; };
+		32B9609098169DD07FA2ABDB77A14F38 /* TTGTagCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTGTagCollectionView.debug.xcconfig; sourceTree = "<group>"; };
+		36C6F0DD9B00CD62109C2D53724C22F7 /* TTGTagCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TTGTagCollectionView.framework; path = TTGTagCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B6DEEED48F7E83D685CCC62A8212BE /* Stevia+Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Notifications.swift"; path = "Source/Stevia+Notifications.swift"; sourceTree = "<group>"; };
+		3E2A1C8E453F3D533AB0249B5A7D9E22 /* TTGTagCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TTGTagCollectionView.m; path = TTGTagCollectionView/Classes/TTGTagCollectionView.m; sourceTree = "<group>"; };
 		4B0B3A84DF615471A7DF402C42F07635 /* Pods-AdBoards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdBoards.debug.xcconfig"; sourceTree = "<group>"; };
-		60B5211AB10648CDC22795B3BFC34715 /* Stevia+Hierarchy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Hierarchy.swift"; path = "Source/Stevia+Hierarchy.swift"; sourceTree = "<group>"; };
-		610F2E6140F8BD2C38C8E4BFDE7D1874 /* Stevia+GetConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+GetConstraint.swift"; path = "Source/Stevia+GetConstraint.swift"; sourceTree = "<group>"; };
-		67DE06BC7C79004F68BC9D542AA9A033 /* Stevia+Alignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Alignment.swift"; path = "Source/Stevia+Alignment.swift"; sourceTree = "<group>"; };
+		4E42F8314FBF50B8389030E210BA0920 /* TTGTagCollectionView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGTagCollectionView-umbrella.h"; sourceTree = "<group>"; };
+		5CEFD1144B43B210501B50521015FAE8 /* Stevia+Center.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Center.swift"; path = "Source/Stevia+Center.swift"; sourceTree = "<group>"; };
+		5F824C51741B96400D074F9715E1F9BC /* Stevia+Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Position.swift"; path = "Source/Stevia+Position.swift"; sourceTree = "<group>"; };
+		65C75103FC6C9FB50FA523D3A4CD638B /* SteviaLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SteviaLayout-umbrella.h"; sourceTree = "<group>"; };
+		6A223D9CFE396B88BBC2EA5A3BD9333B /* SteviaLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SteviaLayout.debug.xcconfig; sourceTree = "<group>"; };
 		6A430C17468C1EDEF134A490408DDB72 /* Pods-AdBoards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AdBoards.release.xcconfig"; sourceTree = "<group>"; };
 		6C31C2613339EB64BC264B82A26A534D /* Pods_AdBoards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AdBoards.framework; path = "Pods-AdBoards.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		711FD282930AA4387800092A1EC20082 /* SteviaLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SteviaLayout-dummy.m"; sourceTree = "<group>"; };
+		73C922B25DA40651451203B9E1348D53 /* TTGTagCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTGTagCollectionView.h; path = TTGTagCollectionView/Classes/TTGTagCollectionView.h; sourceTree = "<group>"; };
 		80F27B3E8FF589F7FF278D601579F7EF /* Pods-AdBoards-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AdBoards-dummy.m"; sourceTree = "<group>"; };
+		852356EFB52DA54CD85219992FA3ABA1 /* Stevia+FlexibleMargin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+FlexibleMargin.swift"; path = "Source/Stevia+FlexibleMargin.swift"; sourceTree = "<group>"; };
+		8B12C2C8C3F7BB0A2780B73158490680 /* Stevia+GetConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+GetConstraint.swift"; path = "Source/Stevia+GetConstraint.swift"; sourceTree = "<group>"; };
+		9216A72A84B85F52AB539C000B38F6B8 /* SteviaLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SteviaLayout-Info.plist"; sourceTree = "<group>"; };
+		953506FCD4C77418B41C53E919EE4BEE /* Stevia+Percentage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Percentage.swift"; path = "Source/Stevia+Percentage.swift"; sourceTree = "<group>"; };
+		99EBE556A6EF397D531DD38A4960912D /* TTGTagCollectionView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TTGTagCollectionView.modulemap; sourceTree = "<group>"; };
+		9C09F7DBD34B4056184CB144011626B9 /* Stevia+Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Style.swift"; path = "Source/Stevia+Style.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2D498F080970CAFB7DE38EE18968C25 /* SteviaLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SteviaLayout-umbrella.h"; sourceTree = "<group>"; };
-		AF4DB6F97E9C05E95771B63A9B9E594F /* Stevia+Stacks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Stacks.swift"; path = "Source/Stevia+Stacks.swift"; sourceTree = "<group>"; };
-		B943F422EBEC02EFC694893132AC7FBD /* SteviaLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SteviaLayout.modulemap; sourceTree = "<group>"; };
-		BAB28CB08BB07EB6B0113B59557E9B44 /* Stevia+Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Size.swift"; path = "Source/Stevia+Size.swift"; sourceTree = "<group>"; };
-		BC0E8FAA3D18308350970475FE2496D2 /* Stevia+Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Content.swift"; path = "Source/Stevia+Content.swift"; sourceTree = "<group>"; };
-		BCC2BD24EFAE5B9E15B17B23144E02D3 /* Stevia+FlexibleMargin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+FlexibleMargin.swift"; path = "Source/Stevia+FlexibleMargin.swift"; sourceTree = "<group>"; };
-		BD04CE2770B7872A955F5C171BCF1180 /* SteviaLayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SteviaLayout-Info.plist"; sourceTree = "<group>"; };
+		B220DD4689B130AB5814B0A4EE3A71FA /* TTGTagCollectionView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TTGTagCollectionView-prefix.pch"; sourceTree = "<group>"; };
+		B63C86B1D3F20769AB8D914F3B0DED5E /* TTGTextTagCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TTGTextTagCollectionView.h; path = TTGTagCollectionView/Classes/TTGTextTagCollectionView.h; sourceTree = "<group>"; };
+		BBD7AABFD3548EAB9168335127424F89 /* TTGTagCollectionView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TTGTagCollectionView-Info.plist"; sourceTree = "<group>"; };
+		C26FDCA806D5E93D81BABAC95554A5F3 /* SteviaLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SteviaLayout.modulemap; sourceTree = "<group>"; };
 		C4BFB8CDD622C6CD00ADC776A27FD585 /* Pods-AdBoards-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AdBoards-frameworks.sh"; sourceTree = "<group>"; };
-		C9687338385D134D6882C2F8221B2F0A /* SteviaLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SteviaLayout-prefix.pch"; sourceTree = "<group>"; };
-		C9CCE5FD29CFBEB0601B7BECD51EF1EA /* SteviaLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SteviaLayout.release.xcconfig; sourceTree = "<group>"; };
 		CA972BE14DB4530BD0640492EC1BAF10 /* Pods-AdBoards-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AdBoards-umbrella.h"; sourceTree = "<group>"; };
-		CB250C026B31286355CC85005730F617 /* Stevia+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Operators.swift"; path = "Source/Stevia+Operators.swift"; sourceTree = "<group>"; };
+		CBEB6FEF2491AF17D8F40779B027D2D8 /* Stevia+Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Operators.swift"; path = "Source/Stevia+Operators.swift"; sourceTree = "<group>"; };
+		D20603A2184A59F3E35C993CE342E763 /* Stevia+Stacks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Stacks.swift"; path = "Source/Stevia+Stacks.swift"; sourceTree = "<group>"; };
 		D47C9FCD7106AF968C227F488A5A3FEC /* Pods-AdBoards.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AdBoards.modulemap"; sourceTree = "<group>"; };
-		D4FEE10B2682E104328BE1984C4EC891 /* Stevia+Position.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Position.swift"; path = "Source/Stevia+Position.swift"; sourceTree = "<group>"; };
 		DE90CE8A0DA0F3A5364FCDD4803AD3EC /* Stevia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Stevia.framework; path = SteviaLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DFC66909DFFB83B976C58B27333914EC /* Stevia+LayoutAnchors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+LayoutAnchors.swift"; path = "Source/Stevia+LayoutAnchors.swift"; sourceTree = "<group>"; };
+		DF6A560F9DD0A19272CEF913340E0832 /* TTGTagCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TTGTagCollectionView.release.xcconfig; sourceTree = "<group>"; };
 		E2101D6224F791B2D9E824A5B3DB2290 /* Pods-AdBoards-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AdBoards-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E4B3872E76BF2A3CAAEE933904695605 /* SteviaLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SteviaLayout-dummy.m"; sourceTree = "<group>"; };
-		FC177C45B4C09E89F78F733BB9D795D9 /* Stevia+DoubleDash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+DoubleDash.swift"; path = "Source/Stevia+DoubleDash.swift"; sourceTree = "<group>"; };
+		EF362D969F0BC2C1B8A0076A8429C161 /* Stevia+DoubleDash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+DoubleDash.swift"; path = "Source/Stevia+DoubleDash.swift"; sourceTree = "<group>"; };
+		F41203288ED4A72999A2759795EF37FF /* Stevia+Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Size.swift"; path = "Source/Stevia+Size.swift"; sourceTree = "<group>"; };
+		F55FDCD4EBC03CAF928945392C4A771C /* Stevia+Baselines.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Baselines.swift"; path = "Source/Stevia+Baselines.swift"; sourceTree = "<group>"; };
+		F986704AC64015A9BD0514879593B9C6 /* Stevia+Content.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Stevia+Content.swift"; path = "Source/Stevia+Content.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1E12567A36B3934DB2A1CE95C7A053D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA9E24EBCF659F2F50D340003A7DABC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57AD97FD4C9405D6487BCEBF4E82BFB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC3545D515E783D88E770FE6AE59E2B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		716BBFF824368AEFBBA1037EB5E8D44C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -95,67 +137,69 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E6D7ADEDED5737A5170601A5BCF8CEF3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				863CEBD4A1262F19C4393F04A3102551 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5380AFE840CEC46DF0A095B16D48D74B /* Products */ = {
+		0AEE71EB51D55221CD24BACAFF885B6B /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				6C31C2613339EB64BC264B82A26A534D /* Pods_AdBoards.framework */,
 				DE90CE8A0DA0F3A5364FCDD4803AD3EC /* Stevia.framework */,
+				36C6F0DD9B00CD62109C2D53724C22F7 /* TTGTagCollectionView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		613DB741F54827A412351FEA91688B10 /* SteviaLayout */ = {
+		3C28B4D9E8C3A26ED1E0198FD5E3C0BD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				67DE06BC7C79004F68BC9D542AA9A033 /* Stevia+Alignment.swift */,
-				3443446B1A65E77A1C4EC1D6C293B3D2 /* Stevia+Baselines.swift */,
-				1C96417097BECC34EDE2986D59CDF3A5 /* Stevia+Center.swift */,
-				0CB5B466BE30B7DF45EBADDEFEAD77DD /* Stevia+Constraints.swift */,
-				BC0E8FAA3D18308350970475FE2496D2 /* Stevia+Content.swift */,
-				FC177C45B4C09E89F78F733BB9D795D9 /* Stevia+DoubleDash.swift */,
-				1B430CF109040505459A1387B0BA02B0 /* Stevia+Equation.swift */,
-				101C8096CA578F85B2625C715D3822E4 /* Stevia+Fill.swift */,
-				BCC2BD24EFAE5B9E15B17B23144E02D3 /* Stevia+FlexibleMargin.swift */,
-				610F2E6140F8BD2C38C8E4BFDE7D1874 /* Stevia+GetConstraint.swift */,
-				60B5211AB10648CDC22795B3BFC34715 /* Stevia+Hierarchy.swift */,
-				DFC66909DFFB83B976C58B27333914EC /* Stevia+LayoutAnchors.swift */,
-				42CA0B23DA59A01A3EF7311FCD1F6597 /* Stevia+Notifications.swift */,
-				CB250C026B31286355CC85005730F617 /* Stevia+Operators.swift */,
-				0826E2AD8843EFE07098B404C6D049C3 /* Stevia+Percentage.swift */,
-				D4FEE10B2682E104328BE1984C4EC891 /* Stevia+Position.swift */,
-				BAB28CB08BB07EB6B0113B59557E9B44 /* Stevia+Size.swift */,
-				AF4DB6F97E9C05E95771B63A9B9E594F /* Stevia+Stacks.swift */,
-				3A5A6C28B3E5018B3CAB0EB5E2173834 /* Stevia+Style.swift */,
-				6CC01CD86C4E20FE0326C50D6C84638C /* Support Files */,
-			);
-			name = SteviaLayout;
-			path = SteviaLayout;
-			sourceTree = "<group>";
-		};
-		6CC01CD86C4E20FE0326C50D6C84638C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B943F422EBEC02EFC694893132AC7FBD /* SteviaLayout.modulemap */,
-				E4B3872E76BF2A3CAAEE933904695605 /* SteviaLayout-dummy.m */,
-				BD04CE2770B7872A955F5C171BCF1180 /* SteviaLayout-Info.plist */,
-				C9687338385D134D6882C2F8221B2F0A /* SteviaLayout-prefix.pch */,
-				A2D498F080970CAFB7DE38EE18968C25 /* SteviaLayout-umbrella.h */,
-				45ED155BC13BB2D7675DBD04AE6D9A1F /* SteviaLayout.debug.xcconfig */,
-				C9CCE5FD29CFBEB0601B7BECD51EF1EA /* SteviaLayout.release.xcconfig */,
+				C26FDCA806D5E93D81BABAC95554A5F3 /* SteviaLayout.modulemap */,
+				711FD282930AA4387800092A1EC20082 /* SteviaLayout-dummy.m */,
+				9216A72A84B85F52AB539C000B38F6B8 /* SteviaLayout-Info.plist */,
+				293ED4D60C5DF0556ABCF677EE5765AA /* SteviaLayout-prefix.pch */,
+				65C75103FC6C9FB50FA523D3A4CD638B /* SteviaLayout-umbrella.h */,
+				6A223D9CFE396B88BBC2EA5A3BD9333B /* SteviaLayout.debug.xcconfig */,
+				0B4C964D5D808ACB8A27ACB1669CA64E /* SteviaLayout.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SteviaLayout";
+			sourceTree = "<group>";
+		};
+		69188709F87FF282A4AD2C8F08ED8305 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94C919868789CD5DA58E98E037E99A36 /* SteviaLayout */,
+				AC19AA110D556CF8C92BE81603BE4D0C /* TTGTagCollectionView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		94C919868789CD5DA58E98E037E99A36 /* SteviaLayout */ = {
+			isa = PBXGroup;
+			children = (
+				08331551EDFC40DE8A8EE6E8A9912CDA /* Stevia+Alignment.swift */,
+				F55FDCD4EBC03CAF928945392C4A771C /* Stevia+Baselines.swift */,
+				5CEFD1144B43B210501B50521015FAE8 /* Stevia+Center.swift */,
+				01F58EDEA565AAB94DDE3510D588D6F7 /* Stevia+Constraints.swift */,
+				F986704AC64015A9BD0514879593B9C6 /* Stevia+Content.swift */,
+				EF362D969F0BC2C1B8A0076A8429C161 /* Stevia+DoubleDash.swift */,
+				1EED5D2B5E6D4F3045EF02CBE623CFE5 /* Stevia+Equation.swift */,
+				18C494FDB309E08507DE2C395FF27650 /* Stevia+Fill.swift */,
+				852356EFB52DA54CD85219992FA3ABA1 /* Stevia+FlexibleMargin.swift */,
+				8B12C2C8C3F7BB0A2780B73158490680 /* Stevia+GetConstraint.swift */,
+				0F29D89AD7F0FD43F39F5724642BC9B6 /* Stevia+Hierarchy.swift */,
+				23DF5B338F4487CC59AD9AF02570A017 /* Stevia+LayoutAnchors.swift */,
+				37B6DEEED48F7E83D685CCC62A8212BE /* Stevia+Notifications.swift */,
+				CBEB6FEF2491AF17D8F40779B027D2D8 /* Stevia+Operators.swift */,
+				953506FCD4C77418B41C53E919EE4BEE /* Stevia+Percentage.swift */,
+				5F824C51741B96400D074F9715E1F9BC /* Stevia+Position.swift */,
+				F41203288ED4A72999A2759795EF37FF /* Stevia+Size.swift */,
+				D20603A2184A59F3E35C993CE342E763 /* Stevia+Stacks.swift */,
+				9C09F7DBD34B4056184CB144011626B9 /* Stevia+Style.swift */,
+				3C28B4D9E8C3A26ED1E0198FD5E3C0BD /* Support Files */,
+			);
+			name = SteviaLayout;
+			path = SteviaLayout;
 			sourceTree = "<group>";
 		};
 		ABD1696E5484E188FA59D0E1E5D283FA /* Targets Support Files */ = {
@@ -164,6 +208,19 @@
 				B8565BDA5F29E48459D442636E627F7E /* Pods-AdBoards */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AC19AA110D556CF8C92BE81603BE4D0C /* TTGTagCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				73C922B25DA40651451203B9E1348D53 /* TTGTagCollectionView.h */,
+				3E2A1C8E453F3D533AB0249B5A7D9E22 /* TTGTagCollectionView.m */,
+				B63C86B1D3F20769AB8D914F3B0DED5E /* TTGTextTagCollectionView.h */,
+				0C456C0C958A9D30CD6033D8C47F7E89 /* TTGTextTagCollectionView.m */,
+				D75F67727D5414DEE396F8DB18DB9062 /* Support Files */,
+			);
+			name = TTGTagCollectionView;
+			path = TTGTagCollectionView;
 			sourceTree = "<group>";
 		};
 		B8565BDA5F29E48459D442636E627F7E /* Pods-AdBoards */ = {
@@ -196,18 +253,10 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				D0084CFB2A907B8F5ECF2535A2C13978 /* Pods */,
-				5380AFE840CEC46DF0A095B16D48D74B /* Products */,
+				69188709F87FF282A4AD2C8F08ED8305 /* Pods */,
+				0AEE71EB51D55221CD24BACAFF885B6B /* Products */,
 				ABD1696E5484E188FA59D0E1E5D283FA /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D0084CFB2A907B8F5ECF2535A2C13978 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				613DB741F54827A412351FEA91688B10 /* SteviaLayout */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -218,14 +267,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D75F67727D5414DEE396F8DB18DB9062 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				99EBE556A6EF397D531DD38A4960912D /* TTGTagCollectionView.modulemap */,
+				18EEA684C5A4523FC96E84C4ECCE254B /* TTGTagCollectionView-dummy.m */,
+				BBD7AABFD3548EAB9168335127424F89 /* TTGTagCollectionView-Info.plist */,
+				B220DD4689B130AB5814B0A4EE3A71FA /* TTGTagCollectionView-prefix.pch */,
+				4E42F8314FBF50B8389030E210BA0920 /* TTGTagCollectionView-umbrella.h */,
+				32B9609098169DD07FA2ABDB77A14F38 /* TTGTagCollectionView.debug.xcconfig */,
+				DF6A560F9DD0A19272CEF913340E0832 /* TTGTagCollectionView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TTGTagCollectionView";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		20573543EA613FCED230D859108AA8CE /* Headers */ = {
+		37C67B23CA11B3FCDAC59D15CFF49D1F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26A496006DEB84DC2DBD015BEFB7B2B4 /* Pods-AdBoards-umbrella.h in Headers */,
+				10BB92451A9089BFF4393E8B6DB71890 /* TTGTagCollectionView-umbrella.h in Headers */,
+				3AF3901D9E7FE751F16767EE5E3E4887 /* TTGTagCollectionView.h in Headers */,
+				8D25259489746F10C3E0A1C8679ABAD5 /* TTGTextTagCollectionView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,22 +303,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4EA32C22DC98E0B66BDE6601943957D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28CDE412D97E73BABA6E6B836628236C /* Pods-AdBoards-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		844CD14C3E58C65B3C80E0B1CBDB7E37 /* Pods-AdBoards */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59BF963CFB742193A33773E42FC89D83 /* Build configuration list for PBXNativeTarget "Pods-AdBoards" */;
+			buildConfigurationList = 41DC3488DDDA18DB74902C75971660C4 /* Build configuration list for PBXNativeTarget "Pods-AdBoards" */;
 			buildPhases = (
-				20573543EA613FCED230D859108AA8CE /* Headers */,
-				85E6C402C2788A62191B90AC94992C61 /* Sources */,
-				E6D7ADEDED5737A5170601A5BCF8CEF3 /* Frameworks */,
-				A5B8167BC85A28882DB7CE04DFF59AAA /* Resources */,
+				E4EA32C22DC98E0B66BDE6601943957D /* Headers */,
+				052389EB6F82C6EA8A9F447A7E3DE193 /* Sources */,
+				1E12567A36B3934DB2A1CE95C7A053D5 /* Frameworks */,
+				BF0DA102F851C47DA8641452D8C03044 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DC84CCEC3F3E5D2DE327F00826DE1B33 /* PBXTargetDependency */,
+				C8B0062F603F41EADCC4D8D67C3CEB29 /* PBXTargetDependency */,
+				4BC82180C9D58874FDF2123D61C26937 /* PBXTargetDependency */,
 			);
 			name = "Pods-AdBoards";
 			productName = "Pods-AdBoards";
@@ -277,6 +352,24 @@
 			productReference = DE90CE8A0DA0F3A5364FCDD4803AD3EC /* Stevia.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F4949B35B65C78C4D7DCBEEA66EC61D4 /* TTGTagCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68FEA514D73F339FF9AC5F33897597EE /* Build configuration list for PBXNativeTarget "TTGTagCollectionView" */;
+			buildPhases = (
+				37C67B23CA11B3FCDAC59D15CFF49D1F /* Headers */,
+				7A938DB253801134E7977E423ECDCB1A /* Sources */,
+				57AD97FD4C9405D6487BCEBF4E82BFB9 /* Frameworks */,
+				1133979CFCC7678D9BC28ED22730C5DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TTGTagCollectionView;
+			productName = TTGTagCollectionView;
+			productReference = 36C6F0DD9B00CD62109C2D53724C22F7 /* TTGTagCollectionView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -287,7 +380,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -295,17 +388,25 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 5380AFE840CEC46DF0A095B16D48D74B /* Products */;
+			productRefGroup = 0AEE71EB51D55221CD24BACAFF885B6B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				844CD14C3E58C65B3C80E0B1CBDB7E37 /* Pods-AdBoards */,
 				CF263AB023E40C4315ED4A97C6D7829F /* SteviaLayout */,
+				F4949B35B65C78C4D7DCBEEA66EC61D4 /* TTGTagCollectionView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1133979CFCC7678D9BC28ED22730C5DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		939AB8B2B8B549019D4598DD0D6314D9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,7 +414,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5B8167BC85A28882DB7CE04DFF59AAA /* Resources */ = {
+		BF0DA102F851C47DA8641452D8C03044 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,11 +424,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		85E6C402C2788A62191B90AC94992C61 /* Sources */ = {
+		052389EB6F82C6EA8A9F447A7E3DE193 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1D986455E8F10CC3BD31EA7E39B73AD /* Pods-AdBoards-dummy.m in Sources */,
+				BBE836B66E877B2C56813895625F8D48 /* Pods-AdBoards-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A938DB253801134E7977E423ECDCB1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717FD26A54BED7190BF8043A4F9EAB0C /* TTGTagCollectionView-dummy.m in Sources */,
+				8EA1E26B890C3CB5F290B548D08C6626 /* TTGTagCollectionView.m in Sources */,
+				447DF1694134D4F71FF065854CBFAD24 /* TTGTextTagCollectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,21 +472,25 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DC84CCEC3F3E5D2DE327F00826DE1B33 /* PBXTargetDependency */ = {
+		4BC82180C9D58874FDF2123D61C26937 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TTGTagCollectionView;
+			target = F4949B35B65C78C4D7DCBEEA66EC61D4 /* TTGTagCollectionView */;
+			targetProxy = 6AB13530FA5D69C2EBD1AC6D9F6ED862 /* PBXContainerItemProxy */;
+		};
+		C8B0062F603F41EADCC4D8D67C3CEB29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SteviaLayout;
 			target = CF263AB023E40C4315ED4A97C6D7829F /* SteviaLayout */;
-			targetProxy = 39FBA4DB87F0652AED30205171B46B64 /* PBXContainerItemProxy */;
+			targetProxy = 6AA39AC8EAB295938344865E11FFE826 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1F4EE37CD825B72EE7A5BD706629E885 /* Debug */ = {
+		3B9734AB851F7781D0EFB9DF6A2126B8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B0B3A84DF615471A7DF402C42F07635 /* Pods-AdBoards.debug.xcconfig */;
+			baseConfigurationReference = DF6A560F9DD0A19272CEF913340E0832 /* TTGTagCollectionView.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -385,32 +500,32 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AdBoards/Pods-AdBoards-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TTGTagCollectionView/TTGTagCollectionView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTGTagCollectionView/TTGTagCollectionView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AdBoards/Pods-AdBoards.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/TTGTagCollectionView/TTGTagCollectionView.modulemap";
+				PRODUCT_MODULE_NAME = TTGTagCollectionView;
+				PRODUCT_NAME = TTGTagCollectionView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		40DEDD2625871E9FB720139C28F4BB47 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45ED155BC13BB2D7675DBD04AE6D9A1F /* SteviaLayout.debug.xcconfig */;
+			baseConfigurationReference = 6A223D9CFE396B88BBC2EA5A3BD9333B /* SteviaLayout.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -445,7 +560,7 @@
 		};
 		5169ECCDF7EE304FC12B205A0DC7CB3B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9CCE5FD29CFBEB0601B7BECD51EF1EA /* SteviaLayout.release.xcconfig */;
+			baseConfigurationReference = 0B4C964D5D808ACB8A27ACB1669CA64E /* SteviaLayout.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -472,6 +587,45 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		553F17EB849A448A0E2A600125250ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A430C17468C1EDEF134A490408DDB72 /* Pods-AdBoards.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdBoards/Pods-AdBoards-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdBoards/Pods-AdBoards.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -543,12 +697,10 @@
 			};
 			name = Debug;
 		};
-		E79CE0DA5715147B225CC4ED39629B52 /* Release */ = {
+		E67784A2039771F36B51D1396C32EB90 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A430C17468C1EDEF134A490408DDB72 /* Pods-AdBoards.release.xcconfig */;
+			baseConfigurationReference = 32B9609098169DD07FA2ABDB77A14F38 /* TTGTagCollectionView.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -558,29 +710,27 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AdBoards/Pods-AdBoards-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TTGTagCollectionView/TTGTagCollectionView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TTGTagCollectionView/TTGTagCollectionView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AdBoards/Pods-AdBoards.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/TTGTagCollectionView/TTGTagCollectionView.modulemap";
+				PRODUCT_MODULE_NAME = TTGTagCollectionView;
+				PRODUCT_NAME = TTGTagCollectionView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -642,6 +792,44 @@
 			};
 			name = Release;
 		};
+		F705D6EF8DF186D68D0376A98DB2FF50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B0B3A84DF615471A7DF402C42F07635 /* Pods-AdBoards.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AdBoards/Pods-AdBoards-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AdBoards/Pods-AdBoards.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -650,6 +838,15 @@
 			buildConfigurations = (
 				40DEDD2625871E9FB720139C28F4BB47 /* Debug */,
 				5169ECCDF7EE304FC12B205A0DC7CB3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41DC3488DDDA18DB74902C75971660C4 /* Build configuration list for PBXNativeTarget "Pods-AdBoards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F705D6EF8DF186D68D0376A98DB2FF50 /* Debug */,
+				553F17EB849A448A0E2A600125250ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -663,11 +860,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59BF963CFB742193A33773E42FC89D83 /* Build configuration list for PBXNativeTarget "Pods-AdBoards" */ = {
+		68FEA514D73F339FF9AC5F33897597EE /* Build configuration list for PBXNativeTarget "TTGTagCollectionView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1F4EE37CD825B72EE7A5BD706629E885 /* Debug */,
-				E79CE0DA5715147B225CC4ED39629B52 /* Release */,
+				E67784A2039771F36B51D1396C32EB90 /* Debug */,
+				3B9734AB851F7781D0EFB9DF6A2126B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

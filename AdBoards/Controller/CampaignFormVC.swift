@@ -51,23 +51,24 @@ class CampaignFormVC: UIViewController {
     let dontHaveAccLabel: UILabel = {
         let label = UILabel()
         label.descriptLabel()
-        label.text = "Don't have a logo"
+        label.text = "Don't have a logo?"
         return label
     }()
     
     let nextButton: UIButton = {
         let button = UIButton()
         button.setTitle("Next", for: .normal)
-        button.gradientButton()
+        button.gradientButton("account")
         
         return button
     }()
     
     let companyNameView: UIView = {
         let view = UIView()
-        view.createFormView(formLabel: "Company name", formTextField: "Sientefic")
+        view.createFormView(formLabel: "Company name", formTextField: "")
         return view
     }()
+    
     let companyTaglineView: UIView = {
         let view = UIView()
         view.createFormView(formLabel: "Company Tagline ( Optional )", formTextField: "Sientefic Books")
@@ -114,12 +115,15 @@ class CampaignFormVC: UIViewController {
     func config() {
         view.backgroundColor = .white
         let backButton = UIBarButtonItem(image: UIImage(named: "back"), style: .done, target: self, action: #selector(goBack))
-        let button = UIButton(type: .custom)
-        button.setImage(UIImage (named: "avatar"), for: .normal)
-        button.frame = CGRect(x: 0.0, y: 0.0, width: 35.0, height: 35.0)
-        //button.addTarget(target, action: nil, for: .touchUpInside)
-        let avatarImage = UIBarButtonItem(customView: button)
-        self.navigationItem.rightBarButtonItem = avatarImage
+        
+        
+//        let button = UIButton(type: .custom)
+//        button.setImage(UIImage (named: "avatar"), for: .normal)
+//        button.frame = CGRect(x: 0.0, y: 0.0, width: 35.0, height: 35.0)
+//        button.smallButton()
+//        let avatarImage = UIBarButtonItem(customView: button)
+//        self.navigationItem.rightBarButtonItem = avatarImage
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "avatar"), style: .done, target: self, action: nil)
         self.navigationItem.leftBarButtonItem = backButton
         
         //addView

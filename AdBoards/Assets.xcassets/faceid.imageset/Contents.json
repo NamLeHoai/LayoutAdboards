@@ -1,8 +1,8 @@
 {
   "images" : [
     {
+      "filename" : "faceid24Px.png",
       "idiom" : "universal",
-      "filename" : "Single Copy.png",
       "scale" : "1x"
     },
     {
@@ -15,7 +15,7 @@
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }

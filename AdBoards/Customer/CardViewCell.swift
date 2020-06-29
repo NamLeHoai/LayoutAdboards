@@ -19,25 +19,27 @@ class CardViewCell: UITableViewCell {
      let nameCard: UILabel = {
          let label = UILabel()
          label.text = "sdasd"
+        label.font = UIFont.systemFont(ofSize: 14)
          return label
      }()
      
      let descriptCard: UILabel = {
          let label = UILabel()
          label.text = "sdasd"
+        label.font = UIFont.systemFont(ofSize: 13)
+        label.textColor = .lightGray
+        label.numberOfLines = 0
          return label
      }()
     
     let containtView: UIView = {
         let view = UIView()
-        view.backgroundColor = .red
         
         return view
     }()
     
     let rightView: UIView = {
         let view = UIView()
-        view.backgroundColor = .red
         
         return view
     }()
@@ -55,58 +57,62 @@ class CardViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        setupLayout()
-        print("haiz")
-        self.backgroundColor = .purple
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        setupLayout()
+        self.backgroundColor = .cyan
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowOpacity = 0.15
+        self.layer.shadowOffset = .zero
+        self.layer.shadowRadius = 10
+        self.layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
+        self.layer.shouldRasterize = true
+        self.layer.rasterizationScale = UIScreen.main.scale
         
     }
 
     func setupLayout() {
-//        self.sv(iconImage,
-//                containtView.sv(
-//                    nameCard, descriptCard
-//            )
-//        )
-//
-//
-//        self.layout(
-//            16,
-//            |-16-iconImage-containtView|
-//
-//        )
-//
-//        containtView.layout(
-//            |nameCard ~ 16,
-//            4,
-//            |descriptCard-30-| ~ 80
-//        )
-//        iconImage.height(50).width(50)
-//        print("co dc ko")
-        self.sv(
-            containtView.sv(
-                iconImage, rightView.sv(nameCard, descriptCard)
+        self.sv(iconImage,
+                containtView.sv(
+                    nameCard, descriptCard
             )
         )
+
+
         self.layout(
-            0,
-            |containtView.height(132).width(344)|,
-            0
-        )
-        containtView.layout(
             16,
-            |-16-iconImage-16-rightView-16-|,
+            |-16-iconImage-containtView|,
             16
+            
         )
-        rightView.layout(
-            |nameCard|,
+
+        containtView.layout(
+            |nameCard,
             4,
-            |descriptCard| ~ 80
+            |descriptCard-30-| ~ 80
         )
+        iconImage.height(50).width(50)
+//        self.sv(
+//            containtView.sv(
+//                iconImage, rightView.sv(nameCard, descriptCard)
+//            )
+//        )
+//        self.layout(
+//            0,
+//            |containtView.height(132).width(344)|,
+//            0
+//        )
+//        containtView.layout(
+//            16,
+//            |-16-iconImage-16-rightView-16-|,
+//            16
+//        )
+//        rightView.layout(
+//            |nameCard|,
+//            4,
+//            |descriptCard| ~ 80
+//        )
     }
 }

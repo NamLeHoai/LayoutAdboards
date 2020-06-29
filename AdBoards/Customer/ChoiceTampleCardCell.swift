@@ -7,14 +7,12 @@
 //
 
 import UIKit
-
+import Stevia
 class ChoiceTampleCardCell: UITableViewCell {
-    
-    let containView = UIView()
     
     let imageCard: UIImageView = {
         let imageView = UIImageView ()
-        imageView.image = UIImage(named: "Card")
+        imageView.image = UIImage(named: "Single")
         
         return imageView
     }()
@@ -25,9 +23,21 @@ class ChoiceTampleCardCell: UITableViewCell {
         label.headerLabel()
         return label
     }()
-    
-    let subCard:
 
+    let subCard: UILabel = {
+        let label = UILabel()
+        label.text = "Got Fashion"
+        label.headerLabel()
+        return label
+    }()
+    
+    let useButton: UIButton = {
+        let button = UIButton()
+        button.setTitle("Use", for: .normal)
+        button.smallButton()
+        return button
+    }()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -37,6 +47,18 @@ class ChoiceTampleCardCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+        setupLayout()
+    }
+    
+    func setupLayout() {
+        self.sv(imageCard)
+        self.layout(
+            0,
+            |imageCard.height(306).width(343)|,
+            24
+        )
+        
+//        imageCard.fillContainer()
     }
 
 }
