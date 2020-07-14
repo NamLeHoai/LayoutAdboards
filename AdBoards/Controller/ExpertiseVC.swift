@@ -42,10 +42,11 @@ class ExpertiseVC: UIViewController {
     }
     
     func config() {
-        title = "Expertise"
         view.backgroundColor = .white
         let backButton = UIBarButtonItem(image: UIImage(named: "back"), style: .done, target: self, action: #selector(goBack))
+        backButton.tintColor = .black
         self.navigationItem.leftBarButtonItem = backButton
+        navigationController?.presentTransparentNavigationBar()
     }
     @objc func goBack() {
         self.navigationController?.popViewController(animated: true)
@@ -54,7 +55,7 @@ class ExpertiseVC: UIViewController {
     func setupLayout() {
         view.sv(heyLabel, descriptLabel, cardView)
         view.layout(
-            200,
+            99,
             |-16-heyLabel-292-| ~ 28,
             16,
             |-16-descriptLabel-18-| ~ 60,
@@ -70,14 +71,8 @@ class ExpertiseVC: UIViewController {
         cardView.delegate = self
         cardView.dataSource = self
         cardView.register(CardViewCell.self, forCellReuseIdentifier: "CardViewCell")
-
-        cardView.layer.shadowColor = UIColor.black.cgColor
-        cardView.layer.shadowOpacity = 0.15
-        cardView.layer.shadowOffset = .zero
-        cardView.layer.shadowRadius = 10
-        cardView.layer.shadowPath = UIBezierPath(rect: cardView.bounds).cgPath
-        cardView.layer.shouldRasterize = true
-        cardView.layer.rasterizationScale = UIScreen.main.scale
+        cardView.separatorInset = .zero
+        cardView.separatorStyle = .none
     }
 }
 
@@ -89,22 +84,13 @@ extension ExpertiseVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CardViewCell", for: indexPath) as! CardViewCell
         cell.card = cards[indexPath.row]
-        
+        cell.shadowForCard()
         return cell
     }
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 132
-//    }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         navigationController?.pushViewController(CampaignsVC(), animated: true)
     }
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 5
-    }
-    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return UITableView.automaticDimension
-//    }
+    }    
 }

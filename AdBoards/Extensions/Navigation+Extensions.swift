@@ -23,6 +23,5 @@ extension UINavigationController {
         navigationBar.isTranslucent = UINavigationBar.appearance().isTranslucent
         navigationBar.shadowImage = UINavigationBar.appearance().shadowImage
     }
-    
         
 }

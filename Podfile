@@ -8,4 +8,5 @@ target 'AdBoards' do
   # Pods for AdBoards
   pod 'SteviaLayout'
 pod 'TTGTagCollectionView'
+pod 'BetterSegmentedControl', '~> 1.3'
 end

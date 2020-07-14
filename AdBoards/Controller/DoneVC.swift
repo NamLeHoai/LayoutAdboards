@@ -9,6 +9,11 @@
 import UIKit
 import Stevia
 class DoneVC: UIViewController {
+    
+    override func viewDidLayoutSubviews() {
+        HomeButton.applyGradient(withColours: [UIColor.color1(),UIColor.color2()], gradientOrientation: .horizontal)
+    }
+
 
     let centerImage: UIImageView = {
         let imageView = UIImageView()
@@ -21,6 +26,7 @@ class DoneVC: UIViewController {
         let label = UILabel()
         label.headerLabel()
         label.text = "Done! "
+        label.textAlignment = .center
         return label
     }()
     

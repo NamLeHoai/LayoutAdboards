@@ -9,6 +9,13 @@
 import UIKit
 import Stevia
 class LoginViewController: UIViewController {
+        
+    override func viewDidLayoutSubviews() {
+        loginButton.applyGradient(withColours: [UIColor.color1(),UIColor.color2()], gradientOrientation: .horizontal)
+//        loginButton.backgroundColor = .red
+        
+        footerLabel.updateGradientTextColor(gradientColors: [UIColor.color1(),UIColor.color2()])
+    }
 
     let logo: UIImageView = {
         let imageView = UIImageView()
@@ -42,10 +49,8 @@ class LoginViewController: UIViewController {
         let loginButton: UIButton = {
             let button = UIButton(type: .custom)
             button.setTitle("Login", for: .normal)
-            
             button.gradientButton("account")
-            
-            
+            button.layer.cornerRadius = 6
             return button
         }()
         
@@ -53,8 +58,7 @@ class LoginViewController: UIViewController {
             let button = UIButton()
             button.setTitle("Get Started", for: .normal)
             button.setTitleColor(.black, for: .normal)
-            
-            button.gradientButton("account")
+            button.backgroundColor = .white
             return button
         }()
         
@@ -63,14 +67,12 @@ class LoginViewController: UIViewController {
             label.text = "Term or service"
             label.font = UIFont.systemFont(ofSize: 13)
             label.textAlignment = .center
-            label.textColor = UIColor(red: 0.10, green: 0.196, blue: 0.186, alpha: 1.0)
             return label
         }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        self.navigationController?.hideTransparentNavigationBar()
         setupLayout()
         config()
     }
@@ -93,23 +95,23 @@ class LoginViewController: UIViewController {
             16,
             |-20-startedButton-20-| ~ 48,
             16,
-            footerLabel.height(15).width(102)
+            |-footerLabel-|
             
             
         )
-        logo.centerHorizontally()
-        footerLabel.centerHorizontally()
-        
+        logo.centerHorizontally()        
     }
 
     func config() {
-        loginButton.addTarget(self, action: #selector(onLogin), for: .touchUpInside)
+        startedButton.addTarget(self, action: #selector(onLogin), for: .touchUpInside)
+        self.navigationController?.hideTransparentNavigationBar()
+        startedButton.shadow()
+        loginButton.shadow()
     }
+    
     
     @objc func onLogin() {
         let Expertise = ExpertiseVC()
-//        self.navigationController?.hideTransparentNavigationBar()
-        self.navigationController?.presentTransparentNavigationBar()
         self.navigationController?.pushViewController(Expertise, animated: true)
         
     }

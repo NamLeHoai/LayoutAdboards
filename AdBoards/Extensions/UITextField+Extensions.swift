@@ -11,13 +11,19 @@ import UIKit
 
 extension UITextField {
     func searchTF(name: String) {
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 24, height: 22))
-        let image = UIImage(named: name)
-        imageView.image = image
+        self.backgroundColor = .searchTFColor()
+        self.placeholder = "Search"
         self.leftViewMode = UITextField.ViewMode.always
         self.rightViewMode = UITextField.ViewMode.always
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        let image = UIImage(named: "question")
+        imageView.image = image
+        let imageView1 = UIImageView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        let image1 = UIImage(named: "question")
+        imageView1.image = image1
         self.leftView = imageView
-        self.rightView = imageView
+        self.rightView = imageView1
+        
         
     }
     
@@ -30,4 +36,10 @@ extension UITextField {
         self.layer.addSublayer(border)
         self.layer.masksToBounds = true
     }
+    
+    open override func draw(_ rect: CGRect) {
+        self.applyGradient(withColours: [UIColor.color1(),UIColor.color2()], gradientOrientation: .horizontal)
+    }
+    
+    
 }

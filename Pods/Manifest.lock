@@ -1,20 +1,24 @@
 PODS:
+  - BetterSegmentedControl (1.3.0)
   - SteviaLayout (4.7.3)
   - TTGTagCollectionView (1.11.1)
 
 DEPENDENCIES:
+  - BetterSegmentedControl (~> 1.3)
   - SteviaLayout
   - TTGTagCollectionView
 
 SPEC REPOS:
   trunk:
+    - BetterSegmentedControl
     - SteviaLayout
     - TTGTagCollectionView
 
 SPEC CHECKSUMS:
+  BetterSegmentedControl: 85d1b0343a09603b098884d527f550dfc8e6cdd9
   SteviaLayout: c2ecdcff57d44e38fd2f65e54ad52aeae28ca0c4
   TTGTagCollectionView: 86fcbfa6a7493c9e860b01c2e693cffc8acf6de1
 
-PODFILE CHECKSUM: e6c1aa8ca612bb29c63ad0c762a5bb85d8629dbc
+PODFILE CHECKSUM: 5dac83180d93eecdf4edc5240f16f19e84f97530
 
 COCOAPODS: 1.9.1

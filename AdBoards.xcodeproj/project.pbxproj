@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		22916952F027DD2C832C6015 /* Pods_AdBoards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB86A65405041A197F1FCE0 /* Pods_AdBoards.framework */; };
 		3D3048B4249A56C500FF35A6 /* DetailTamplateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3048B3249A56C500FF35A6 /* DetailTamplateVC.swift */; };
+		3D489E3824BC30B400259097 /* ManagerPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D489E3724BC30B400259097 /* ManagerPicker.swift */; };
 		3D8DE5362498B454000800C6 /* ChoiceTampleCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8DE5352498B454000800C6 /* ChoiceTampleCardCell.swift */; };
 		3D8DE5522498C361000800C6 /* CampaignCateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8DE54C2498C361000800C6 /* CampaignCateVC.swift */; };
 		3D8DE5532498C361000800C6 /* CampaignsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8DE54D2498C361000800C6 /* CampaignsVC.swift */; };
@@ -35,11 +36,13 @@
 		3DCFACF3249A70D200832604 /* DoneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFACF2249A70D200832604 /* DoneVC.swift */; };
 		3DCFACF5249A70EB00832604 /* NormalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCFACF4249A70EB00832604 /* NormalVC.swift */; };
 		3DD152B1249E3DA800A4B08F /* CardCampaignsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD152B0249E3DA800A4B08F /* CardCampaignsCell.swift */; };
+		3DFE442B24A9E5C7009F5EA0 /* extensionColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFE442A24A9E5C7009F5EA0 /* extensionColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		215841EFA712F792BD161A5F /* Pods-AdBoards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdBoards.release.xcconfig"; path = "Target Support Files/Pods-AdBoards/Pods-AdBoards.release.xcconfig"; sourceTree = "<group>"; };
 		3D3048B3249A56C500FF35A6 /* DetailTamplateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTamplateVC.swift; sourceTree = "<group>"; };
+		3D489E3724BC30B400259097 /* ManagerPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerPicker.swift; sourceTree = "<group>"; };
 		3D8DE5352498B454000800C6 /* ChoiceTampleCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceTampleCardCell.swift; sourceTree = "<group>"; };
 		3D8DE54C2498C361000800C6 /* CampaignCateVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignCateVC.swift; sourceTree = "<group>"; };
 		3D8DE54D2498C361000800C6 /* CampaignsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CampaignsVC.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		3DCFACF2249A70D200832604 /* DoneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneVC.swift; sourceTree = "<group>"; };
 		3DCFACF4249A70EB00832604 /* NormalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalVC.swift; sourceTree = "<group>"; };
 		3DD152B0249E3DA800A4B08F /* CardCampaignsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCampaignsCell.swift; sourceTree = "<group>"; };
+		3DFE442A24A9E5C7009F5EA0 /* extensionColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionColor.swift; sourceTree = "<group>"; };
 		93826536AE4053D8673309B2 /* Pods-AdBoards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdBoards.debug.xcconfig"; path = "Target Support Files/Pods-AdBoards/Pods-AdBoards.debug.xcconfig"; sourceTree = "<group>"; };
 		EAB86A65405041A197F1FCE0 /* Pods_AdBoards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AdBoards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -154,6 +158,7 @@
 				3DAD7AB02491403B0071CB5A /* Navigation+Extensions.swift */,
 				3DAD7AB42491450A0071CB5A /* UILabel+Extensions.swift */,
 				3DAD7AC42493F8C20071CB5A /* UITextField+Extensions.swift */,
+				3DFE442A24A9E5C7009F5EA0 /* extensionColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				3DAD7ABE249320940071CB5A /* Card.swift */,
+				3D489E3724BC30B400259097 /* ManagerPicker.swift */,
 			);
 			path = Modal;
 			sourceTree = "<group>";
@@ -310,6 +316,7 @@
 				3D8DE5522498C361000800C6 /* CampaignCateVC.swift in Sources */,
 				3DCFACF1249A70BA00832604 /* SelectTamplateVC.swift in Sources */,
 				3D3048B4249A56C500FF35A6 /* DetailTamplateVC.swift in Sources */,
+				3DFE442B24A9E5C7009F5EA0 /* extensionColor.swift in Sources */,
 				3DAD7AB52491450A0071CB5A /* UILabel+Extensions.swift in Sources */,
 				3DAD7ABC24931D0C0071CB5A /* CardViewCell.swift in Sources */,
 				3DAD7AC52493F8C20071CB5A /* UITextField+Extensions.swift in Sources */,
@@ -319,6 +326,7 @@
 				3DAD7A922490EC6D0071CB5A /* SceneDelegate.swift in Sources */,
 				3DCFACEF249A709F00832604 /* EditorTamplateVC.swift in Sources */,
 				3D8DE5562498C361000800C6 /* ExpertiseVC.swift in Sources */,
+				3D489E3824BC30B400259097 /* ManagerPicker.swift in Sources */,
 				3D8DE5362498B454000800C6 /* ChoiceTampleCardCell.swift in Sources */,
 				3D8DE5552498C361000800C6 /* CampaignFormVC.swift in Sources */,
 				3D8DE5542498C361000800C6 /* ChoiceTamplateVC.swift in Sources */,

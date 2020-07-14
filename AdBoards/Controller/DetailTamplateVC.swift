@@ -11,7 +11,10 @@ import TTGTagCollectionView
 import Stevia
 class DetailTamplateVC: UIViewController {
     
-    
+    override func viewDidLayoutSubviews() {
+        UseButton.applyGradient(withColours: [UIColor.color1(),UIColor.color2()], gradientOrientation: .horizontal)
+    }
+
     
     let topView = UIView()
     

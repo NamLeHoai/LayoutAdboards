@@ -20,9 +20,8 @@ class CategoryCell: UITableViewCell {
     
     let checkmarkImg: UIImageView = {
         let imageView = UIImageView()
-        let image = UIImage(named: "eye")
+        let image = UIImage(named: "checkMark")
         imageView.image = image
-        
         return imageView
     }()
     
@@ -41,12 +40,11 @@ class CategoryCell: UITableViewCell {
     }
     
     func setupLayout() {
-        print("ahuhu")
         self.sv(cateLB, checkmarkImg)
         self.layout(
             16,
-//            align(horizontally: |-16-checkmarkImg-18-cateLB-|)
-            |-16-checkmarkImg-18-cateLB-|
+            |-16-checkmarkImg-18-cateLB-|,
+            16
         )
         checkmarkImg.width(24).height(24)
         

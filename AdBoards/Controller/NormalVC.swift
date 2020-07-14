@@ -8,14 +8,14 @@
 
 import UIKit
 import Stevia
-
+import BetterSegmentedControl
 class NormalVC: UIViewController {
     
     let cardTableView = UITableView()
     
     var cardsImage = ["Single","Single1"]
     
-    let gradientView = UIView()
+    let blurView = UIView()
     
     let CreateButton: UIButton = {
         let button = UIButton()
@@ -36,18 +36,19 @@ class NormalVC: UIViewController {
     }
     
     func setupLayout() {
-//        view.sv(cardTableView)
-//        view.layout(
-//            122,
-//            |-16-cardTableView-16-|,
-//            0
-////            -224,
-////            |gradientView| ~ 224
-//        )
-        view.addSubview(cardTableView)
-        view.addSubview(CreateButton)
-        view.addSubview(gradientView)
-//        view.addSubview()
+        view.sv(cardTableView)
+        
+        let iconsSegmentedControl = BetterSegmentedControl(
+        frame: CGRect(x: 0.0, y: 400.0, width: view.bounds.width / 3, height: 30.0),
+        segments: IconSegment.segments(withIcons: [#imageLiteral(resourceName: "facebook"),
+                                                   #imageLiteral(resourceName: "twitter")],
+                                       iconSize: CGSize(width: 20.0, height: 20.0),
+                                       normalIconTintColor: .white,
+                                       selectedIconTintColor: UIColor(red: 0.16, green: 0.64, blue: 0.94, alpha: 1.00)),
+        options: [.cornerRadius(15.0),
+                  .backgroundColor(UIColor(red: 0.16, green: 0.64, blue: 0.94, alpha: 1.00)),
+                  .indicatorViewBackgroundColor(.white)])
+        cardTableView.sv(CreateButton, blurView, iconsSegmentedControl)
         
         cardTableView.translatesAutoresizingMaskIntoConstraints = false
         cardTableView.topAnchor.constraint(equalTo: view.topAnchor, constant: 122).isActive = true
@@ -62,9 +63,8 @@ class NormalVC: UIViewController {
         cardTableView.delegate = self
         cardTableView.dataSource = self
         cardTableView.register(CardCampaignsCell.self, forCellReuseIdentifier: "CardCampaignsCell")
-//        gradientView.backgroundColor = .white
-        
-//        tabBarView.delegate = self
+
+//        cardTableView
     }
     
     @objc func onCreate() {

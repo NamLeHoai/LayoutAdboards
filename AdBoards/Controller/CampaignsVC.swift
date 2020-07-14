@@ -10,6 +10,11 @@ import UIKit
 import Stevia
 class CampaignsVC: UIViewController {
     
+    override func viewDidLayoutSubviews() {
+        CreateButton.applyGradient(withColours: [UIColor.color1(),UIColor.color2()], gradientOrientation: .horizontal)
+        CreateButton.layer.cornerRadius = 6
+    }
+    
     let campaignsLabel: UILabel = {
         let label = UILabel()
         label.headerLabel()
@@ -49,7 +54,7 @@ class CampaignsVC: UIViewController {
     
     let CreateButton: UIButton = {
         let button = UIButton()
-        button.gradientButton("account")
+        button.gradientButton("add")
         button.setTitle("Create a Campaign", for: .normal)
         return button
     }()
@@ -81,10 +86,6 @@ class CampaignsVC: UIViewController {
             112,
             |-20-CreateButton-20-| ~ 48
         )
-        
-//        avatar ~ (45)
-//        avatar.heightEqualsWidth()
-//        avatar.height(45).width(45)
     }
     
     func config() {

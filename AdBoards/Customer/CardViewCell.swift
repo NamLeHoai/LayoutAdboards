@@ -12,7 +12,7 @@ class CardViewCell: UITableViewCell {
 
      let iconImage: UIImageView = {
          let imageView = UIImageView()
-         imageView.image = UIImage(named: "Icon")
+         imageView.image = UIImage(named: "xuongrong")
          return imageView
      }()
      
@@ -31,16 +31,10 @@ class CardViewCell: UITableViewCell {
         label.numberOfLines = 0
          return label
      }()
-    
-    let containtView: UIView = {
-        let view = UIView()
+    let containView = UIView()
         
-        return view
-    }()
-    
     let rightView: UIView = {
         let view = UIView()
-        
         return view
     }()
     
@@ -50,7 +44,7 @@ class CardViewCell: UITableViewCell {
                 iconImage.image = data.iconImage
                 nameCard.text = data.nameCard
                 descriptCard.text = data.descriptCard
-                print(data.nameCard)
+                
             }
         }
     }
@@ -62,57 +56,30 @@ class CardViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         setupLayout()
-        self.backgroundColor = .cyan
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOpacity = 0.15
-        self.layer.shadowOffset = .zero
-        self.layer.shadowRadius = 10
-        self.layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
-        self.layer.shouldRasterize = true
-        self.layer.rasterizationScale = UIScreen.main.scale
+        
         
     }
 
     func setupLayout() {
-        self.sv(iconImage,
-                containtView.sv(
-                    nameCard, descriptCard
-            )
-        )
-
-
+        self.sv(containView)
         self.layout(
             16,
-            |-16-iconImage-containtView|,
+            |-containView-|,
             16
-            
         )
-
-        containtView.layout(
-            |nameCard,
-            4,
-            |descriptCard-30-| ~ 80
+        containView.sv(iconImage, rightView)
+        containView.layout(
+            16,
+            |-16-iconImage.width(100).height(100)-rightView-24-|,
+            16
         )
-        iconImage.height(50).width(50)
-//        self.sv(
-//            containtView.sv(
-//                iconImage, rightView.sv(nameCard, descriptCard)
-//            )
-//        )
-//        self.layout(
-//            0,
-//            |containtView.height(132).width(344)|,
-//            0
-//        )
-//        containtView.layout(
-//            16,
-//            |-16-iconImage-16-rightView-16-|,
-//            16
-//        )
-//        rightView.layout(
-//            |nameCard|,
-//            4,
-//            |descriptCard| ~ 80
-//        )
+        rightView.sv(nameCard, descriptCard)
+        rightView.layout(
+            0,
+            |nameCard.width(47).height(16),
+            |descriptCard.width(240).height(80),
+            0
+        )
+        
     }
 }

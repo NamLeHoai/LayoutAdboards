@@ -10,7 +10,7 @@ import UIKit
 import Stevia
 class ChoiceTamplateVC: UIViewController {
 
-    var cards = ["Single", "Single1", "Single"]
+    var cards = ["imageTop", "Samples", "imageTop"]
     
     let heyLabel: UILabel = {
         let label = UILabel()
@@ -49,6 +49,13 @@ class ChoiceTamplateVC: UIViewController {
         cardTableView.showsVerticalScrollIndicator = false
         cardTableView.register(ChoiceTampleCardCell.self, forCellReuseIdentifier: "ChoiceTampleCardCell")
         setuptLayout()
+        cardTableView.separatorStyle = .singleLine
+        let backButton = UIBarButtonItem(image: UIImage(named: "back"), style: .done, target: self, action: #selector(goBack))
+        backButton.tintColor = .black
+        self.navigationItem.leftBarButtonItem = backButton
+        navigationController?.presentTransparentNavigationBar()
+        
+        searchTF.backgroundColor = .addArea()
     }
     
     func setuptLayout() {
@@ -67,7 +74,9 @@ class ChoiceTamplateVC: UIViewController {
         )
     }
 
-    
+    @objc func goBack() {
+        navigationController?.popViewController(animated: true)
+    }
 
 }
 

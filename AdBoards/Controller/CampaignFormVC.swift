@@ -10,6 +10,8 @@ import UIKit
 import Stevia
 class CampaignFormVC: UIViewController {
 
+    var manager: ManagerImagePicker!
+    
     let heyLabel: UILabel = {
         let label = UILabel()
         label.headerLabel()
@@ -19,20 +21,21 @@ class CampaignFormVC: UIViewController {
     
     let descriptLabel: UILabel = {
         let label = UILabel()
-        label.descriptLabel()
+        label.descriptLabel1()
         label.text = "Please fill out your company information so that we know more about you."
         return label
     }()
     
     let addLogoLabel: UILabel = {
         let label = UILabel()
-        label.descriptLabel()
+        label.descriptLabel1()
         return label
     }()
     
     let addButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(named: "addButton"), for: .normal)
+        
         return button
     }()
     let addView: UIView = {
@@ -52,6 +55,7 @@ class CampaignFormVC: UIViewController {
         let label = UILabel()
         label.descriptLabel()
         label.text = "Don't have a logo?"
+        label.updateGradientTextColor(gradientColors: [.color1(),.color2()  ])
         return label
     }()
     
@@ -74,6 +78,11 @@ class CampaignFormVC: UIViewController {
         view.createFormView(formLabel: "Company Tagline ( Optional )", formTextField: "Sientefic Books")
         return view
     }()
+    
+    override func viewDidLayoutSubviews() {
+        nextButton.applyGradient(withColours: [UIColor.color1(),UIColor.color2()], gradientOrientation: .horizontal)
+        nextButton.layer.cornerRadius = 6
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -109,28 +118,36 @@ class CampaignFormVC: UIViewController {
             
         )
         addView.sv(addButton)
-        addButton.centerInContainer()
+        addView.layout(
+            addButton.centerInContainer()
+        )
     }
     
     func config() {
         view.backgroundColor = .white
         let backButton = UIBarButtonItem(image: UIImage(named: "back"), style: .done, target: self, action: #selector(goBack))
-        
+        backButton.tintColor = .black
+        self.navigationItem.leftBarButtonItem = backButton
+        navigationController?.presentTransparentNavigationBar()
         
 //        let button = UIButton(type: .custom)
-//        button.setImage(UIImage (named: "avatar"), for: .normal)
-//        button.frame = CGRect(x: 0.0, y: 0.0, width: 35.0, height: 35.0)
-//        button.smallButton()
-//        let avatarImage = UIBarButtonItem(customView: button)
-//        self.navigationItem.rightBarButtonItem = avatarImage
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "avatar"), style: .done, target: self, action: nil)
-        self.navigationItem.leftBarButtonItem = backButton
+//        //set image for button
+//        button.setImage(UIImage(named: "avatar"), for: .normal)
+//        let barButton = UIBarButtonItem(customView: button)
+//        //assign button to navigationbar
+//        self.navigationItem.rightBarButtonItem = barButton
+        
+        let avatarButton = UIBarButtonItem(image: UIImage(named: "avatar"), style: .plain, target: self, action: nil)
+        self.navigationItem.rightBarButtonItem = avatarButton
+        
         
         //addView
-        addView.backgroundColor = .lightGray
+        addView.backgroundColor = .addArea()
         addView.layer.cornerRadius = 6
+        
         //nextButton
         nextButton.addTarget(self, action: #selector(onNext), for: .touchUpInside)
+        addButton.addTarget(self, action: #selector(onSelectPhoto(_:)), for: .touchUpInside)
     }
 
     @objc func goBack() {
@@ -138,5 +155,23 @@ class CampaignFormVC: UIViewController {
     }
     @objc func onNext() {
         navigationController?.pushViewController(ChoiceTamplateVC(), animated: true)
+    }
+    
+    @objc func onSelectPhoto(_ sender: Any) {
+        let alert = UIAlertController(title: "App", message: "Chọn ảnh từ", preferredStyle: .alert)
+        let cancel = UIAlertAction(title: "Huỷ", style: .cancel, handler: nil)
+        let camera = UIAlertAction(title: "Máy ảnh", style: .default, handler: { (_) in
+            print("Chọn ảnh từ máy ảnh")
+            self.manager.fromCamera()
+        })
+        let libray = UIAlertAction(title: "Thư viện", style: .default, handler: { (_) in
+            print("Chọn ảnh từ thư viện")
+            self.manager.fromLibrary()
+        })
+        
+        alert.addAction(camera)
+        alert.addAction(libray)
+        alert.addAction(cancel)
+        present(alert, animated: true, completion: nil)
     }
 }

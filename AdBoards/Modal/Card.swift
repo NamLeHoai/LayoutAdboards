@@ -16,7 +16,7 @@ struct Card {
 }
 
 func fakeData()-> [Card] {
-    let card1 = Card(iconImage: UIImage(named: "leaf"), nameCard: "Novice", descriptCard: "You’re new to marketing, Just getting Started. Suitable for SMEs, Entreprenours, Business Interns, Students and everyone else")
+    let card1 = Card(iconImage: UIImage(named: "xuongrong"), nameCard: "Novice", descriptCard: "You’re new to marketing, Just getting Started. Suitable for SMEs, Entreprenours, Business Interns, Students and everyone else")
     let card2 = Card(iconImage: UIImage(named: "SmallTree"), nameCard: "Expert", descriptCard: "You’re marketing expert. You know what you are doing. Suitable for Enterprises, Marketing Professionals & Marketing Agencies.")
     
     return [card1, card2]
